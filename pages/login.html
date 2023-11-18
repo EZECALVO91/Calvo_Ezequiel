@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARDIDAS</title>
+    <script src="https://kit.fontawesome.com/10af0335f4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="..//style/login.css">
+</head>
+<body>
+    <header class="header">
+        <section class="menu container">
+            <a href="../pages/index.html" class="logo">ARDIDAS</a>
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <img src="../images/menu.png" class="menu-icono" alt="menu" />
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="../pages/login.html">>>>INICIAR SESIÓN<<<</a>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <ul class="ul_img_carrito">
+                    <li class="submenu">
+                        <img src="../images/car.svg" alt="carrito" />
+                        <div id="carrito">
+                            <table id="lista-carrito">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <a href="#" id="vaciar-carrito" class="btn-2">Vaciar Carrito</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="header-content container">
+            <div class="header-img">
+                <a href="../pages/index.html"><img src="../images/LOGO-ARDIDAS.png" alt="banner nike" /></a>
+            </div>
+            <div class="header-txt">
+                <h1>OFERTAS ESPECIALES</h1>
+                <p>
+                    estrena las mejores zapatillas, registrate para saber mas!!
+                </p>
+                <a href="../pages/registro.html" class="btn-1">REGISTRATE!</a>
+            </div>
+        </section>
+    </header>
+    <main class="main_login">
+        <form action="/login" method="post" onsubmit="return validarLogin()"></form>
+            <section>
+                <article class="articulo_login_main">
+                    <label for="usuario"></label>
+                    <input class="input_login" type="email" minlength="6" maxlength="16"
+                        placeholder="Nombre de usuario o e-mail" required>
+                </article>
+                <article class="articulo_login_main">
+                    <label for="contraseña"></label>
+                    <input class="input_login" type="password" minlength="6" maxlength="16"
+                        placeholder="Elegi tu contraseña" required>
+                </article>
+                <article class="articulo_login_main">
+                    <button class="btn_login_main" type="submit">ENVIAR</button>
+                </article>
+            </section>
+        </form>
+    </main>
+    <footer class="footer">
+        <div class="contenedor-footer">
+            <div class="hipervinculos link-footer">
+                <h3 class="txt-footer-navegacion">NAVEGACIÓN</h3>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#">¿Como comprar?</a></li>
+                </ul>
+            </div>
+            <div class="hipervinculos contacto_footer">
+                <h3>CONTACTANOS</h3>
+                <ul>
+                    <li>
+                        <a href="#"><i class="fa-solid fa-phone icono-contact"></i>tel:1122334455</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-solid fa-envelope icono-contact"></i>ardidas.contacto@gmail.com</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="hipervinculos redes-footer">
+                <h3>REDES SOCIALES</h3>
+                <ul class="redes">
+                    <li>
+                        <a href="#"><i class="fa-brands fa-square-facebook" style="color: #fcfce7"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-brands fa-tiktok" style="color: #fcfce7"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-brands fa-instagram" style="color: #fcfce7"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="copy-footer">
+            <h6 class="copy">Copyright © 1999-2023 Ardidas S.R.L.</h6>
+        </div>
+    </footer>
+    <script src="../js/login.js"></script>
+</body>
+</html>

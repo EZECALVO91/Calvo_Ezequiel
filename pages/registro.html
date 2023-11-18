@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARDIDAS</title>
+    <script src="https://kit.fontawesome.com/10af0335f4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="..//style/registro.css">
+</head>
+<body>
+    <header class="header">
+        <section class="menu container">
+            <a href="../pages/index.html" class="logo">ARDIDAS</a>
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <img src="../images/menu.png" class="menu-icono" alt="menu" />
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="../pages/login.html">>>>INICIAR SESIÓN<<<</a>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <ul class="ul_img_carrito">
+                    <li class="submenu">
+                        <img src="../images/car.svg" alt="carrito" />
+                        <div id="carrito">
+                            <table id="lista-carrito">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <a href="#" id="vaciar-carrito" class="btn-2">Vaciar Carrito</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="header-content container">
+            <div class="header-img">
+                <a href="../pages/index.html"><img src="../images/LOGO-ARDIDAS.png" alt="banner nike" /></a>
+            </div>
+            <div class="header-txt">
+                <h1>OFERTAS ESPECIALES</h1>
+                <p>
+                    estrena las mejores zapatillas, registrate para saber mas!!
+                </p>
+                <a href="../pages/registro.html" class="btn-1">REGISTRATE!</a>
+            </div>
+        </section>
+    </header>
+    <main>
+        <form class="main_registro" action="/register" method="post" onsubmit="return validarFormulario()">
+            <section>
+                <h4 class="h1_register">Datos Personales</h4>
+                <article class="articulo_registro_main">
+                    <label for="nombre"></label>
+                    <input class="imput_register" type="text" name="nombre" id="nombre"
+                        placeholder="Ingresa nombre y apellido" required>
+                </article>
+                <article class="articulo_registro_main">
+                    <label for="nombre de usuario"></label>
+                    <input class="imput_register" type="text" minlength="5" maxlength="16" name="nombre de usuario"
+                        id="usuario" placeholder="Ingresa nombre de usuario">
+                </article>
+                <article class="articulo_registro_main">
+                    <label for="email"></label>
+                    <input class="imput_register" type="email" name="email" id="email" placeholder="Ingresa tu email"
+                        required>
+                </article>
+            </section>
+            <section>
+                <article class="articulo_registro_main">
+                    <h4 class="h1_register">Fecha de Nacimiento</h4>
+                    <label for="fecha de nacimiento"></label>
+                    <input class="imput_register" type="date" name="fecha">
+                </article>
+                <article class="articulo_registro_main">
+                    <label for="domicilo"></label>
+                    <input class="imput_register" type="text" name="domicilo" id="domicilo" placeholder="Domicilio">
+                </article>
+                <article class="articulo_registro_main">
+                    <h4 class="h1_register">Perfil de Usuario</h4>
+                    <select name="usuario" id="usuario">
+                        <option value="comprador">comprador</option>
+                        <option value="vendedor">vendedor</option>
+                    </select>
+                </article>
+            </section>
+            <section>
+                <article class="articulo_registro_main">
+                    <h4 class="h1_register">Imagen de usuario</h4>
+                    <label for="Selecciona una foto de perfil:"></label>
+                    <input type="file" name="foto" accept="image/*">
+                </article>
+            </section>
+            <section>
+                <article class="articulo_registro_main">
+                    <h4 class="h1_register">Seguridad</h4>
+                    <label for="contraseña"></label>
+                    <input class="imput_register" type="password" minlength="6" maxlength="16" name="contraseña"
+                        id="contraseña" placeholder="Ingresa contraseña" required>
+                </article>
+                <article class="articulo_registro_main">
+                    <label for="confirma-contraseña"></label>
+                    <input class="imput_register" type="password" minlength="6" maxlength="16"
+                        name="confirma-contraseña" id="confirma-contraseña" placeholder="Confirma contraseña" required>
+                </article>
+            </section>
+            <article class="articulo_registro_main">
+                <button class="btn_enviar_registro" type="submit">ENVIAR</button>
+                <button type="reset" class="btn_reset_registro">BORRAR</button>
+            </article>
+        </form>
+    </main>
+    <footer class="footer">
+        <div class="contenedor-footer">
+            <div class="hipervinculos link-footer">
+                <h3 class="txt-footer-navegacion">NAVEGACIÓN</h3>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#">¿Como comprar?</a></li>
+                </ul>
+            </div>
+            <div class="hipervinculos contacto_footer">
+                <h3>CONTACTANOS</h3>
+                <ul>
+                    <li>
+                        <a href="#"><i class="fa-solid fa-phone icono-contact"></i>tel:1122334455</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-solid fa-envelope icono-contact"></i>ardidas.contacto@gmail.com</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="hipervinculos redes-footer">
+                <h3>REDES SOCIALES</h3>
+                <ul class="redes">
+                    <li>
+                        <a href="#"><i class="fa-brands fa-square-facebook" style="color: #fcfce7"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-brands fa-tiktok" style="color: #fcfce7"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-brands fa-instagram" style="color: #fcfce7"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="copy-footer">
+            <h6 class="copy">Copyright © 1999-2023 Ardidas S.R.L.</h6>
+        </div>
+    </footer>
+</body>
+</html>
